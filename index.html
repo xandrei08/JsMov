@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <label for="title">Title</label><br />
+      <input type="text" id="title" />
+      <br /><br />
+      <label for="year">Year</label><br />
+      <input type="number" id="year" />
+      <br /><br />
+      <label for="cover">Cover</label><br />
+      <input type="url" id="cover" />
+      <br /><br />
+      <label for="trailer">Trailer</label><br />
+      <input type="url" id="trailer" />
+      <br /><br />
+      <input type="submit" value="Submit Form" />
+    </form>
+
+    <table id="movies__table" border="2"></table>
+
+    <dialog id="img__dialog">
+      <img src="" alt="Movie Cover" id="cover__image" />
+      <button id="close__dialog__button">Close</button>
+    </dialog>
+
+    <dialog id="trailer__dialog">
+      <iframe
+        src=""
+        frameborder="0"
+        id="iframe"
+        height="300px"
+        width="400px"
+        allowfullscreen
+      ></iframe>
+
+      <button id="close__dialog__button2">Close</button>
+    </dialog>
+
+    <script src="index.js"></script>
+  </body>
+</html>
